@@ -11,6 +11,10 @@
     <name>spring-cloud</name>
     <description>Parent for Spring Cloud</description>
 
+    <modules>
+        <module>eureka</module>
+    </modules>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
