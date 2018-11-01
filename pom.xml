@@ -16,6 +16,7 @@
         <module>client</module>
         <module>ribbon</module>
         <module>feign</module>
+        <module>zuul</module>
     </modules>
 
     <parent>
