@@ -17,6 +17,8 @@
         <module>ribbon</module>
         <module>feign</module>
         <module>zuul</module>
+        <module>configserver</module>
+        <module>configclient</module>
     </modules>
 
     <parent>
