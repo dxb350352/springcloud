@@ -13,6 +13,8 @@ public class ConsumerController {
 
     @GetMapping("/add")
     public String add(@RequestParam(defaultValue = "0") int a, @RequestParam(defaultValue = "0") int b) {
+        //@LoadBalanced
+        //没有这个注解会报找不到eureka-client
         return restTemplate.getForEntity("http://eureka-client/add?a=" + a + "&b=" + b, String.class).getBody();
     }
 
