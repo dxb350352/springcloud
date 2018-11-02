@@ -21,6 +21,8 @@
         <module>configclient</module>
         <module>zipkinserver</module>
         <module>zipkinclient</module>
+        <module>consulclient</module>
+        <module>zookeeperclient</module>
     </modules>
 
     <parent>
