@@ -23,6 +23,8 @@
         <module>zipkinclient</module>
         <module>consulclient</module>
         <module>zookeeperclient</module>
+        <module>auth</module>
+        <module>stream</module>
     </modules>
 
     <parent>
