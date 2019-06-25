@@ -14,9 +14,9 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringCloudApplication
 @RestController
-public class ZipkinClientApplication {
+public class ZipkinClientApplication999x {
     public static void main(String[] args) {
-        SpringApplication.run(ZipkinClientApplication.class, args);
+        SpringApplication.run(ZipkinClientApplication999x.class, args);
     }
 
     @Autowired

@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringCloudApplication
 @RestController
-public class ZookeeperApplication {
+public class ZookeeperApplication1100x {
     public static void main(String args[]) {
-        new SpringApplicationBuilder(ZookeeperApplication.class).web(true).run(args);
+        new SpringApplicationBuilder(ZookeeperApplication1100x.class).web(true).run(args);
     }
 
     @GetMapping

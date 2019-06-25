@@ -6,7 +6,7 @@ import com.netflix.zuul.context.RequestContext;
 import javax.servlet.http.HttpServletRequest;
 
 public class AccessFilter extends ZuulFilter {
-//    pre：路由之前
+    //    pre：路由之前
 //    routing：路由之时
 //    post： 路由之后
 //    error：发送错误调用
@@ -27,7 +27,7 @@ public class AccessFilter extends ZuulFilter {
         HttpServletRequest request = ctx.getRequest();
         Object accessToken = request.getParameter("accessToken");
         if (accessToken == null) {
-            System.out.println("access token is  empty,setResponseStatusCode 401" );
+            System.out.println("access token is  empty,setResponseStatusCode 401");
             ctx.setSendZuulResponse(false);
             ctx.setResponseStatusCode(401);
         }

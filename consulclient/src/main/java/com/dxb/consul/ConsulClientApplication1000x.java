@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringCloudApplication
 @RestController
 //启动consul：consul agent -dev -bind=192.168.130.225
-public class ConsulClientApplication {
+public class ConsulClientApplication1000x {
     public static void main(String[] args) {
-        new SpringApplicationBuilder(ConsulClientApplication.class).web(true).run(args);
+        new SpringApplicationBuilder(ConsulClientApplication1000x.class).web(true).run(args);
     }
 
     @RequestMapping("/hi")

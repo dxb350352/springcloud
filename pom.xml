@@ -25,6 +25,7 @@
         <module>zookeeperclient</module>
         <module>auth</module>
         <module>stream</module>
+        <module>gateway</module>
     </modules>
 
     <parent>

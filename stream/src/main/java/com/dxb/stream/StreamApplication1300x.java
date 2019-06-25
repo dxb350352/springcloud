@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author Administrator
  */
 @SpringBootApplication
-public class StreamApplication {
+public class StreamApplication1300x {
     public static void main(String[] args) {
-        SpringApplication.run(StreamApplication.class, args);
+        SpringApplication.run(StreamApplication1300x.class, args);
     }
 }

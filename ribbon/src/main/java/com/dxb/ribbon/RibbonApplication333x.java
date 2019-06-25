@@ -18,7 +18,7 @@ import org.springframework.web.client.RestTemplate;
  *
  * 当Ribbon与Eureka联合使用时，ribbonServerList会被DiscoveryEnabledNIWSServerList重写，扩展成从Eureka注册中心中获取服务端列表。同时它也会用NIWSDiscoveryPing来取代IPing，它将职责委托给Eureka来确定服务端是否已经启动。
  */
-public class RibbonApplication {
+public class RibbonApplication333x {
     @Bean
     @LoadBalanced
     RestTemplate restTemplate() {
@@ -26,6 +26,6 @@ public class RibbonApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(RibbonApplication.class, args);
+        SpringApplication.run(RibbonApplication333x.class, args);
     }
 }
