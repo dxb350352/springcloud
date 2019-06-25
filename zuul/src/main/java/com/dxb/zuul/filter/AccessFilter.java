@@ -10,18 +10,22 @@ public class AccessFilter extends ZuulFilter {
 //    routing：路由之时
 //    post： 路由之后
 //    error：发送错误调用
+    @Override
     public String filterType() {
         return "pre";
     }
 
+    @Override
     public int filterOrder() {
         return 0;
     }
 
+    @Override
     public boolean shouldFilter() {
         return true;
     }
 
+    @Override
     public Object run() {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();

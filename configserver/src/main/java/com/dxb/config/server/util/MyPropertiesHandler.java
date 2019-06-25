@@ -1,13 +1,16 @@
 package com.dxb.config.server.util;
 
+import org.springframework.boot.env.OriginTrackedMapPropertySource;
 import org.springframework.boot.env.PropertySourceLoader;
-import org.springframework.core.env.PropertiesPropertySource;
 import org.springframework.core.env.PropertySource;
 import org.springframework.core.io.Resource;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 
 public class MyPropertiesHandler implements PropertySourceLoader {
@@ -19,16 +22,19 @@ public class MyPropertiesHandler implements PropertySourceLoader {
     }
 
     @Override
-    public PropertySource<?> load(String name, Resource resource, String profile) throws IOException {
-        if (profile == null) {
-            Properties properties = getProperties(resource);
-            if (!properties.isEmpty()) {
-                PropertiesPropertySource propertiesPropertySource = new PropertiesPropertySource(name, properties);
-                return propertiesPropertySource;
-            }
+    public List<PropertySource<?>> load(String name, Resource resource) throws IOException {
+        Properties properties = getProperties(resource);
+        if (properties.isEmpty()) {
+            return Collections.emptyList();
         }
-        return null;
+        System.out.println("自定义PropertySourceLoader来自定义配置加载:");
+        for (Map.Entry me : properties.entrySet()) {
+            System.out.println(me.getKey() + "=" + me.getValue());
+        }
+        return Collections
+                .singletonList(new OriginTrackedMapPropertySource(name, properties));
     }
+
 
     private Properties getProperties(Resource resource) {
         Properties properties = new Properties();

@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RefreshScope//非重启项目手动刷新配置注解
+//POST http://localhost:7771/actuator/refresh
 public class TestController {
     @Value("${config.test}")
     private String configInfo;
