@@ -30,19 +30,3 @@ build/
 ### VS Code ###
 .vscode/
 .mvn/wrapper/MavenWrapperDownloader.java
-auth/src/main/java/
-auth/src/test/
-client/src/test/
-configclient/src/test/
-configserver/src/test/
-consulclient/src/test/
-eureka/src/test/
-feign/src/test/
-gateway/src/test/
-ribbon/src/test/
-src/
-stream/src/test/
-zipkinclient/src/test/
-zipkinserver/src/test/
-zookeeperclient/src/test/
-zuul/src/test/
