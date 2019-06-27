@@ -27,6 +27,8 @@
         <module>stream</module>
         <module>gateway</module>
         <module>turbine</module>
+        <module>adminserver</module>
+        <module>adminclient</module>
     </modules>
 
     <parent>
