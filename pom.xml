@@ -30,6 +30,7 @@
         <module>adminserver</module>
         <module>adminclient</module>
         <module>configservernative</module>
+        <module>agoodprovider</module>
     </modules>
 
     <parent>

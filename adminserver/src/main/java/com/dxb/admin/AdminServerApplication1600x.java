@@ -15,9 +15,9 @@ import org.springframework.security.web.authentication.SavedRequestAwareAuthenti
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableAdminServer
-public class AdminServerApplication {
+public class AdminServerApplication1600x {
     public static void main(String[] args) {
-        ApplicationContext context = SpringApplication.run(AdminServerApplication.class, args);
+        ApplicationContext context = SpringApplication.run(AdminServerApplication1600x.class, args);
         System.out.println(context.getEnvironment().getProperty("spring.profiles.active") + ".......................");
     }
 
