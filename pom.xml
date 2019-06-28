@@ -29,6 +29,7 @@
         <module>turbine</module>
         <module>adminserver</module>
         <module>adminclient</module>
+        <module>configservernative</module>
     </modules>
 
     <parent>
