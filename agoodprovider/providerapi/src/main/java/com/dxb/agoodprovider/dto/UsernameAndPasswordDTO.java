@@ -1,4 +1,4 @@
-package com.dxb.agoodprovider.api.dto;
+package com.dxb.agoodprovider.dto;
 
 import lombok.Data;
 

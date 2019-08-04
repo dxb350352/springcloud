@@ -1,10 +1,10 @@
 package com.dxb.agoodprovider.controller;
 
 import com.dxb.agoodprovider.api.UserService;
-import com.dxb.agoodprovider.api.dto.UserDTO;
-import com.dxb.agoodprovider.api.dto.UsernameAndPasswordDTO;
 import com.dxb.agoodprovider.db.domain.User;
 import com.dxb.agoodprovider.db.reposity.UserReposity;
+import com.dxb.agoodprovider.dto.UserDTO;
+import com.dxb.agoodprovider.dto.UsernameAndPasswordDTO;
 import com.dxb.agoodprovider.utils.Beans;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;

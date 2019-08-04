@@ -1,7 +1,7 @@
 package com.dxb.agoodprovider.api;
 
-import com.dxb.agoodprovider.api.dto.UserDTO;
-import com.dxb.agoodprovider.api.dto.UsernameAndPasswordDTO;
+import com.dxb.agoodprovider.dto.UserDTO;
+import com.dxb.agoodprovider.dto.UsernameAndPasswordDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
